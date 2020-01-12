@@ -89,6 +89,6 @@ def training_model(data_dir, embedding_dim, batch_size, learning_rate, max_epoch
 
 if __name__ =='__main__':
     ranks =[]
-    ranks = training_model(data_dir="/wn18", embedding_dim=20, batch_size=512, learning_rate=0.01,
+    ranks = training_model(data_dir="wn18", embedding_dim=20, batch_size=512, learning_rate=0.01,
                           max_epoch=1000)
     np.savetxt('rank.txt', ranks)
